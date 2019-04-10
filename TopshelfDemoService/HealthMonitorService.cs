@@ -13,7 +13,7 @@ namespace TopshelfDemoService
         /// <summary>
         /// 检测周期(秒)
         /// </summary>
-        private int _monitorInterval = 3;
+        private int _monitorInterval = 10;
         /// <summary>
         /// 要守护的应用程序列表
         /// </summary>
