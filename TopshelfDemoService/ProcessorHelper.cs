@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -47,6 +48,10 @@ namespace TopshelfDemoService
         {
             try
             {
+                ProcessExtensions.StartProcessAsCurrentUser(applicationPath, args);
+            }
+            catch (Exception e)
+            {
                 var psi = new ProcessStartInfo
                 {
                     FileName = applicationPath,
@@ -55,7 +60,6 @@ namespace TopshelfDemoService
                 };
                 Process.Start(psi);
             }
-            catch{}
         }
     }
 }

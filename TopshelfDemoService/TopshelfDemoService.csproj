@@ -51,6 +51,7 @@
     <Compile Include="DaemonApplicationInfo.cs" />
     <Compile Include="HealthMonitorService.cs" />
     <Compile Include="MyServiceConfigure.cs" />
+    <Compile Include="ProcessExtensions.cs" />
     <Compile Include="ProcessorHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
